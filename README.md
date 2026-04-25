@@ -1,4 +1,4 @@
-# kavya-shankar.github.io
+# shankarkavya.github.io
 
 Personal website / portfolio — [shankarkavya.github.io](https://shankarkavya.github.io)
 
