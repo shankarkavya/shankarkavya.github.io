@@ -12,378 +12,416 @@
 <meta property="og:type" content="website" />
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>" />
-
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
 
-<table class="page" width="800" border="0" cellspacing="0" cellpadding="20" align="center">
+<!-- ============== NAVBAR ============== -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-prompt">
+      <span class="user">kavya</span><span class="sep">@</span><span class="path">robotics</span><span class="sep">:~$</span>
+    </div>
+    <div class="navbar-links">
+      <a href="#about">about</a>
+      <a href="#thesis">thesis</a>
+      <a href="#projects">projects</a>
+      <a href="#experience">experience</a>
+      <a href="blogs.html">blogs</a>
+      <!-- <a href="publications.html">publications</a> -->
+    </div>
+  </div>
+</nav>
 
-<!-- ============== NAV ============== -->
-<tr>
-<td>
-  <p class="nav" style="text-align: center;">
-    <a href="#guido">Project</a> &nbsp;&middot;&nbsp;
-    <a href="#thesis">Thesis</a> &nbsp;&middot;&nbsp;
-    <a href="#projects">Projects</a> &nbsp;&middot;&nbsp;
-    <a href="#experience">Experience</a> &nbsp;&middot;&nbsp;
-    <a href="#blog">Blog</a>
-  </p>
-</td>
-</tr>
+<div class="container">
+<div class="page-layout">
 
-<!-- ============== HEADER ============== -->
-<tr>
-<td>
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td valign="top">
-      <p style="text-align: center;">
-        <name>Kavya Shankar</name>
-      </p>
+<!-- ── MAIN CONTENT (left) ── -->
+<div class="main-content">
 
-      <p>
-        I recently graduated with an M.Sc. in <a href="https://www.h-brs.de/en/inf/master-autonomous-systems">Autonomous Systems</a>
-        from Hochschule Bonn-Rhein-Sieg (H-BRS), Germany. I completed my thesis on
-        <i>affordance-conditioned robot manipulation from egocentric human video</i>, supervised by
-        <a href="https://www.h-brs.de/de/inf/prof-dr-sebastian-houben">Prof. Sebastian Houben</a> and <a href="https://hermannblum.net/">Prof. Hermann Blum</a>.
-      </p>
+<!-- ============== HERO / ABOUT ============== -->
+<section id="about">
+<div class="terminal">
+  <div class="terminal-titlebar">
+    <div class="terminal-dots">
+      <span class="dot-red"></span>
+      <span class="dot-yellow"></span>
+      <span class="dot-green"></span>
+    </div>
+    <div class="terminal-title">kavya@robotics: ~/about</div>
+  </div>
+  <div class="terminal-body">
+    <div class="prompt">
+      <span class="user">kavya</span><span class="sep">@</span><span class="path">robotics</span><span class="sep">:~$ </span><span class="cmd">cat about.txt</span>
+    </div>
 
-      <p>
-        I am currently a Research Assistant at the University of Bonn (RPL), working on leveraging
-        human demonstration data to deploy skills on real robots. I am also building <b>Guido</b>,
-        a mobile assistance robot for hospital patients.
-      </p>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-name">Kavya Shankar</div>
+        <p>
+          I recently graduated with an M.Sc. in <a href="https://www.h-brs.de/en/inf/master-autonomous-systems">Autonomous Systems</a>
+          from Hochschule Bonn-Rhein-Sieg (H-BRS), Germany. I completed my thesis on
+          <em>affordance-conditioned robot manipulation from egocentric human video</em>, supervised by
+          <a href="https://www.h-brs.de/de/inf/prof-dr-sebastian-houben">Prof. Sebastian Houben</a> and <a href="https://hermannblum.net/">Prof. Hermann Blum</a>.
+        </p>
+        <p>
+          I am currently a Research Assistant at the University of Bonn (RPL), working on leveraging
+          human demonstration data to deploy skills on real robots. I am also building <strong>Guido</strong>,
+          a mobile assistance robot for hospital patients.
+        </p>
+        <p>
+          My interests are in robot learning, 3D perception, and getting modern policies
+          to work on real hardware.
+        </p>
+        <div class="hero-links">
+          <a href="mailto:kkavyashankar0009@gmail.com">email</a>
+          <a href="assets/Kavya_Shankar_CV_Feb2026.pdf">cv</a>
+          <a href="https://www.linkedin.com/in/kavya--shankar/">linkedin</a>
+          <a href="https://x.com/kavya_shankar__">x/twitter</a>
+          <a href="https://github.com/">github</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="assets/images/portrait.jpg"
+             alt="Kavya Shankar"
+             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 170 210%22><rect width=%22170%22 height=%22210%22 fill=%22%23111820%22 stroke=%22%2321262d%22/><text x=%2285%22 y=%22110%22 font-family=%22monospace%22 font-size=%2211%22 fill=%22%2300ff88%22 text-anchor=%22middle%22>&gt;_</text></svg>';" />
+      </div>
+    </div>
 
-      <p>
-        My interests are in robot learning, 3D perception, and getting modern policies
-        to work on real hardware.
-      </p>
-
-      <p style="text-align: center;">
-        <a href="mailto:kkavyashankar0009@gmail.com">Email</a> &nbsp;/&nbsp;
-        <a href="assets/Kavya_Shankar_CV_Feb2026.pdf">CV</a> &nbsp;/&nbsp;
-        <a href="https://www.linkedin.com/in/kavya--shankar/">LinkedIn</a> &nbsp;/&nbsp;
-        <a href="https://x.com/kavya_shankar__">Twitter/X</a> &nbsp;/&nbsp;
-        <a href="https://github.com/">Github</a>
-      </p>
-    </td>
-
-    <td valign="top" width="200" style="padding-left: 25px;">
-      <img src="assets/images/portrait.jpg"
-           alt="Kavya Shankar"
-           width="180"
-           onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 180 220%22><rect width=%22180%22 height=%22220%22 fill=%22%23eeeeee%22 stroke=%22%23cccccc%22/><text x=%2290%22 y=%22115%22 font-family=%22monospace%22 font-size=%2211%22 fill=%22%23888%22 text-anchor=%22middle%22>portrait</text></svg>';" />
-    </td>
-  </tr>
-  </table>
-</td>
-</tr>
-
-
-<!-- ============== CURRENT PROJECT: GUIDO ============== -->
-<tr>
-<td>
-  <a name="guido"></a>
-  <heading>Current Project</heading>
-
-  <table width="100%" border="0" cellspacing="0" cellpadding="10">
-  <tr>
-    <td valign="top" width="220">
-      <img src="assets/images/guido-hardware.jpg" width="200"
-           alt="Guido robot platform — top-down view showing Intel NUC, Hokuyo LiDARs, Kelo wheels, and power electronics on an aluminum chassis." />
-    </td>
-    <td valign="top">
-      <papertitle>Guido &mdash; a hospital assistance robot</papertitle>
-      <br/>
-      <b>Kavya Shankar</b>
-      <br/>
-      <i>In progress, 2026&mdash;</i>
-      <br/>
-      <a href="https://x.com/kavya_shankar__">updates</a>
-
-      <p style="margin-top: 8px;">
-        A mobile robot built to help patients in hospitals &mdash; wayfinding, fetching, and a
-        friendly presence. Started in March 2026. ROS 2, with SLAM and Nav2.
-      </p>
-    </td>
-  </tr>
-  </table>
-</td>
-</tr>
+    <div class="prompt" style="margin-top: 20px;">
+      <span class="user">kavya</span><span class="sep">@</span><span class="path">robotics</span><span class="sep">:~$ </span><span class="cursor"></span>
+    </div>
+  </div>
+</div>
+</section>
 
 
 <!-- ============== MASTER'S THESIS ============== -->
-<tr>
-<td>
-  <a name="thesis"></a>
-  <heading>Master's Thesis</heading>
+<section id="thesis">
+<div class="terminal">
+  <div class="terminal-titlebar">
+    <div class="terminal-dots">
+      <span class="dot-red"></span>
+      <span class="dot-yellow"></span>
+      <span class="dot-green"></span>
+    </div>
+    <div class="terminal-title">kavya@robotics: ~/research/thesis</div>
+  </div>
+  <div class="terminal-body">
+    <div class="prompt">
+      <span class="user">kavya</span><span class="sep">@</span><span class="path">robotics</span><span class="sep">:~$ </span><span class="cmd">cat thesis.bib</span>
+    </div>
 
-  <table width="100%" border="0" cellspacing="0" cellpadding="10">
-  <tr>
-    <td valign="top" width="220">
-      <img src="assets/images/FunAkt3D.gif" width="200"
-           alt="FunAkt3D — robot manipulating a drawer using an affordance-conditioned diffusion policy learned from human video." />
-    </td>
-    <td valign="top">
-      <papertitle>FunAkt3D: Functional Element Detection and Affordance-Conditioned Manipulation from Human Video</papertitle>
-      <br/>
-      <b>Kavya Shankar</b>
-      <br/>
-      <i>M.Sc. Thesis, Hochschule Bonn-Rhein-Sieg, 2026</i>
-      <br/>
-      Advisors: Prof. Sebastian Houben, Prof. Hermann Blum
+    <div class="section-heading">Master's Thesis</div>
 
-      <p style="margin-top: 8px;">
-        A diffusion-based trajectory policy that learns manipulation from egocentric human videos,
-        conditioned on detected functional elements (handles, knobs, buttons). Achieves 63.5%
-        real-world success on drawer/door tasks on the Hello Robot Stretch &mdash; a 36 percentage
-        point improvement over the simulation-pretrained baseline.
-      </p>
-    </td>
-  </tr>
-  </table>
-</td>
-</tr>
+    <div class="item">
+      <div class="item-image">
+        <img src="assets/images/FunAkt3D.gif"
+             alt="FunAkt3D — robot manipulating a drawer using an affordance-conditioned diffusion policy learned from human video." />
+      </div>
+      <div class="item-content">
+        <div class="item-title">FunAkt3D: Functional Element Detection and Affordance-Conditioned Manipulation from Human Video</div>
+        <div class="item-meta"><b>Kavya Shankar</b> &middot; M.Sc. Thesis, H-BRS, 2026<br/>Advisors: Prof. Sebastian Houben, Prof. Hermann Blum</div>
+        <p>
+          A diffusion-based trajectory policy that learns manipulation from egocentric human videos,
+          conditioned on detected functional elements (handles, knobs, buttons). Achieves 63.5%
+          real-world success on drawer/door tasks on the Hello Robot Stretch &mdash; a 36 percentage
+          point improvement over the simulation-pretrained baseline.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
 
 <!-- ============== SELECTED PROJECTS ============== -->
-<tr>
-<td>
-  <a name="projects"></a>
-  <heading>Selected Projects</heading>
+<section id="projects">
+<div class="terminal">
+  <div class="terminal-titlebar">
+    <div class="terminal-dots">
+      <span class="dot-red"></span>
+      <span class="dot-yellow"></span>
+      <span class="dot-green"></span>
+    </div>
+    <div class="terminal-title">kavya@robotics: ~/projects</div>
+  </div>
+  <div class="terminal-body">
+    <div class="prompt">
+      <span class="user">kavya</span><span class="sep">@</span><span class="path">robotics</span><span class="sep">:~$ </span><span class="cmd">ls -la projects/</span>
+    </div>
 
-  <table width="100%" border="0" cellspacing="0" cellpadding="10">
+    <div class="section-heading">Projects</div>
 
-  <tr>
-    <td valign="top" width="220">
-      <img src="assets/images/fedetection.png" width="200"
-           alt="Functional element detection in 3D scans." />
-    </td>
-    <td valign="top">
-      <papertitle>Functional Element Detection in 3D Scans</papertitle>
-      <br/>
-      Pre-thesis R&amp;D, SceneFun3D benchmark
-      <p style="margin-top: 6px;">
-        Multi-view YOLO + SAM pipeline for lifting 2D functional-element detections into 3D
-        point clouds. Voxel accumulation, DBSCAN clustering, plane segmentation, and SAM2
-        tracking, with iterative mAP optimisation across several lifting strategies.
-      </p>
-    </td>
-  </tr>
+    <div class="item">
+      <div class="item-image">
+        <img src="assets/images/guido-hardware.jpg"
+             alt="Guido robot platform — top-down view showing Intel NUC, Hokuyo LiDARs, Kelo wheels, and power electronics on an aluminum chassis." />
+      </div>
+      <div class="item-content">
+        <div class="item-title">Guido &mdash; a hospital assistance robot</div>
+        <div class="item-meta"><b>Kavya Shankar</b> &middot; <i>In progress, 2026&mdash;</i></div>
+        <p>
+          A mobile robot built to help patients in hospitals &mdash; wayfinding, fetching, and a
+          friendly presence. Started in March 2026. ROS 2, with SLAM and Nav2.
+        </p>
+        <div class="item-links">
+          <a href="https://x.com/kavya_shankar__">updates &rarr;</a>
+        </div>
+      </div>
+    </div>
 
-  <tr>
-    <td valign="top" width="220">
-      <img src="assets/images/octformer.png" width="200"
-           alt="Retinal layer segmentation in OCT imaging." />
-    </td>
-    <td valign="top">
-      <papertitle>Retinal Layer Segmentation in OCT Imaging</papertitle>
-      <br/>
-      Research mini-project
-      <p style="margin-top: 6px;">
-        Integrated the EVA-02 Vision Transformer backbone into an OCT retinal layer segmentation
-        pipeline, replacing the default CNN encoder to improve representation learning on sparse
-        medical-imaging data.
-      </p>
-    </td>
-  </tr>
+    <div class="item">
+      <div class="item-image">
+        <img src="assets/images/fedetection.png" alt="Functional element detection in 3D scans." />
+      </div>
+      <div class="item-content">
+        <div class="item-title">Functional Element Detection in 3D Scans</div>
+        <div class="item-meta">Pre-thesis R&amp;D, SceneFun3D benchmark</div>
+        <p>
+          Multi-view YOLO + SAM pipeline for lifting 2D functional-element detections into 3D
+          point clouds. Voxel accumulation, DBSCAN clustering, plane segmentation, and SAM2
+          tracking, with iterative mAP optimisation across several lifting strategies.
+        </p>
+      </div>
+    </div>
 
-  <tr>
-    <td valign="top" width="220">
-      <!-- add an image here later: <img src="assets/images/timeseries.png" width="200" alt="..." /> -->
-    </td>
-    <td valign="top">
-      <papertitle>Forecasting Daily Student Interactions on an EdTech Platform</papertitle>
-      <br/>
-      @ ubiMaster, industry research
-      <p style="margin-top: 6px;">
-        Hybrid time-series model predicting daily question volumes across maths, science and
-        language subjects. Combined classical temporal features with user-activity embeddings
-        to improve over pure ARIMA and pure-ML baselines.
-      </p>
-    </td>
-  </tr>
+    <div class="item">
+      <div class="item-image">
+        <img src="assets/images/octformer.png" alt="Retinal layer segmentation in OCT imaging." />
+      </div>
+      <div class="item-content">
+        <div class="item-title">Retinal Layer Segmentation in OCT Imaging</div>
+        <div class="item-meta">Research mini-project</div>
+        <p>
+          Integrated the EVA-02 Vision Transformer backbone into an OCT retinal layer segmentation
+          pipeline, replacing the default CNN encoder to improve representation learning on sparse
+          medical-imaging data.
+        </p>
+      </div>
+    </div>
 
-  <tr>
-    <td valign="top" width="220">
-      <img src="assets/images/bert.jpg" width="200"
-           alt="Multilingual spare-part recommendation with BERT." />
-    </td>
-    <td valign="top">
-      <papertitle>Multilingual Spare-Part Recommendation</papertitle>
-      <br/>
-      @ Vaillant Group, NLP research
-      <p style="margin-top: 6px;">
-        Zero-shot transfer from high-resource to low-resource languages for industrial
-        spare-part recommendation. BERT feature extraction, t-SNE representation analysis, and
-        hybrid retrieval-classification strategies.
-      </p>
-    </td>
-  </tr>
+    <!-- Uncomment when ready to add back:
+    <div class="item">
+      <div class="item-content">
+        <div class="item-title">Forecasting Daily Student Interactions on an EdTech Platform</div>
+        <div class="item-meta">@ ubiMaster, industry research</div>
+        <p>
+          Hybrid time-series model predicting daily question volumes across maths, science and
+          language subjects. Combined classical temporal features with user-activity embeddings
+          to improve over pure ARIMA and pure-ML baselines.
+        </p>
+      </div>
+    </div>
+    -->
 
-  <tr>
-    <td valign="top" width="220">
-      <img src="assets/images/kelo.png" width="200"
-           alt="Motion control for the KELO 500 mobile robot." />
-    </td>
-    <td valign="top">
-      <papertitle>Motion Control for KELO 500 Mobile Robot</papertitle>
-      <br/>
-      Robotics coursework
-      <p style="margin-top: 6px;">
-        Inverse-kinematics controller computing wheel torques from a desired platform force.
-        Direct EtherCAT communication via SOEM, with BLAS/LAPACK for the numerical solve, in C.
-      </p>
-    </td>
-  </tr>
+    <div class="item">
+      <div class="item-image-wrap">
+        <div class="item-image">
+          <img src="assets/images/bert.jpg" alt="Spare part recommendation system at Vaillant Group." />
+        </div>
+        <div class="item-cite">Image: <a href="https://www.sciencedirect.com/topics/computer-science/large-language-model">ScienceDirect</a></div>
+      </div>
+      <div class="item-content">
+        <div class="item-title">Spare Part Recommendation System</div>
+        <div class="item-meta">@ Vaillant Group, industry research</div>
+        <p>
+          Customer complaints were recorded in an unstructured, free-text format with no standardized
+          fields. Using historical records and resolution notes logged by site engineers, we explored
+          using LLMs to interpret these informal complaints and predict relevant spare parts or likely
+          issues, with the aim of enabling faster diagnosis and resolution.
+        </p>
+        <div class="item-meta" style="margin-top: 6px;">NLP, Machine Learning, LLMs</div>
+      </div>
+    </div>
 
-  <tr>
-    <td valign="top" width="220">
-      <img src="assets/images/KD.png" width="200"
-           alt="Engagement prediction in robot-assisted therapy." />
-    </td>
-    <td valign="top">
-      <papertitle>Engagement Prediction in Robot-Assisted Therapy for Children with ASD</papertitle>
-      <br/>
-      Deep learning project
-      <p style="margin-top: 6px;">
-        Knowledge-distillation model trained on OpenFace visual features across therapy sessions
-        to estimate child engagement during robot-assisted autism therapy. Small-data, high-
-        stakes, per-subject generalisation.
-      </p>
-    </td>
-  </tr>
+    <div class="item">
+      <div class="item-image">
+        <img src="assets/images/NewsClassification.png" alt="Topic investigation for online news classification." />
+      </div>
+      <div class="item-content">
+        <div class="item-title">Topic Investigation for Online News Classification</div>
+        <div class="item-meta">@ Fraunhofer IAIS, research</div>
+        <p>
+          Performed this research under the stream "Learning for Multilingual Knowledge Transfer".
+          The goal was to leverage the availability of a higher amount of data in high-resource
+          languages to train and improve over lower-resource languages.
+        </p>
+        <div class="item-meta" style="margin-top: 6px;">NLP, Machine Learning, BERT, Zero-shot Learning, t-SNE, PyTorch, Wandb</div>
+      </div>
+    </div>
 
-  </table>
-</td>
-</tr>
+    <div class="item">
+      <div class="item-image">
+        <img src="assets/images/kelo.png" alt="Motion control for the KELO 500 mobile robot." />
+      </div>
+      <div class="item-content">
+        <div class="item-title">Motion Control for KELO 500 Mobile Robot</div>
+        <div class="item-meta">Robotics coursework</div>
+        <p>
+          Inverse-kinematics controller computing wheel torques from a desired platform force.
+          Direct EtherCAT communication via SOEM, with BLAS/LAPACK for the numerical solve, in C.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-image-wrap">
+        <div class="item-image">
+          <img src="assets/images/KD.png" alt="Engagement prediction in robot-assisted therapy. Image from Rudovic et al., 2019." />
+        </div>
+        <div class="item-cite">Image: <a href="https://arxiv.org/pdf/2006.05525">Rudovic et al., 2019</a></div>
+      </div>
+      <div class="item-content">
+        <div class="item-title">Engagement Prediction in Robot-Assisted Therapy for Children with ASD</div>
+        <div class="item-meta">Deep learning project</div>
+        <p>
+          Knowledge-distillation model trained on OpenFace visual features across therapy sessions
+          to estimate child engagement during robot-assisted autism therapy. Small-data, high-stakes,
+          per-subject generalisation.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
 
 
 <!-- ============== EXPERIENCE ============== -->
-<tr>
-<td>
-  <a name="experience"></a>
-  <heading>Experience</heading>
+<section id="experience">
+<div class="terminal">
+  <div class="terminal-titlebar">
+    <div class="terminal-dots">
+      <span class="dot-red"></span>
+      <span class="dot-yellow"></span>
+      <span class="dot-green"></span>
+    </div>
+    <div class="terminal-title">kavya@robotics: ~/experience</div>
+  </div>
+  <div class="terminal-body">
+    <div class="prompt">
+      <span class="user">kavya</span><span class="sep">@</span><span class="path">robotics</span><span class="sep">:~$ </span><span class="cmd">git log --experience/</span>
+    </div>
 
-  <table width="100%" border="0" cellspacing="0" cellpadding="5">
-    <tr>
-    <td valign="top" width="150"><i>April 2026 &ndash; present</i></td>
-    <td valign="top">
-      <b>RPL @ University of Bonn</b>, Bonn &mdash; <i>Research Assistant</i>. Leveraging human
-      demonstration data for robot learning with diffusion models.
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" width="150"><i>Oct 2024 &ndash; Feb 2026</i></td>
-    <td valign="top">
-      <b>PhenoInspect</b>, Bonn &mdash; <i>Student Data Assistant</i>. Annotation, segmentation
-      and QA of agricultural plant imagery for ML training sets; workflows around
-      SAM-assisted labelling.
-    </td>
-  </tr>
-  <tr>
-    <td valign="top"><i>Apr 2024 &ndash; Jul 2024</i></td>
-    <td valign="top">
-      <b>ubiMaster</b>, Germany &mdash; <i>Student, AI Solutions</i>. Time-series forecasting for
-      early human-in-the-loop intervention signals in an EdTech product.
-    </td>
-  </tr>
-  <tr>
-    <td valign="top"><i>Jan 2023 &ndash; Sep 2023</i></td>
-    <td valign="top">
-      <b>Vaillant Group</b>, Germany &mdash; <i>Student, NLP Research</i>. Feature-extraction
-      strategies for a multilingual spare-part recommendation prototype.
-    </td>
-  </tr>
-  <tr>
-    <td valign="top"><i>Nov 2021 &ndash; Dec 2022</i></td>
-    <td valign="top">
-      <b>Fraunhofer IAIS</b>, Sankt Augustin &mdash; <i>Student Research Assistant</i>.
-      News-classification research with a focus on zero-shot transfer and representation analysis.
-    </td>
-  </tr>
-  <tr>
-    <td valign="top"><i>Sep 2020 &ndash; Jan 2021</i></td>
-    <td valign="top">
-      <b>Covalensedigital</b>, India &mdash; <i>Software Developer</i>. Subscription-monetisation
-      solutions for telecom clients across C, Java/J2EE and PL/SQL.
-    </td>
-  </tr>
-  </table>
-</td>
-</tr>
+    <div class="section-heading">Experience</div>
+
+    <div class="exp-row">
+      <div class="exp-date">Apr 2026 &ndash; present</div>
+      <div class="exp-detail">
+        <b>RPL @ University of Bonn</b>, Bonn &mdash; <i>Research Assistant</i>. Leveraging human
+        demonstration data for robot learning with diffusion models.
+      </div>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-date">Oct 2024 &ndash; Feb 2026</div>
+      <div class="exp-detail">
+        <b>PhenoInspect</b>, Bonn &mdash; <i>Student Data Assistant</i>. Annotation, segmentation
+        and QA of agricultural plant imagery for ML training sets; workflows around
+        SAM-assisted labelling.
+      </div>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-date">Apr 2024 &ndash; Jul 2024</div>
+      <div class="exp-detail">
+        <b>ubiMaster</b>, Germany &mdash; <i>Student, AI Solutions</i>. Time-series forecasting for
+        early human-in-the-loop intervention signals in an EdTech product.
+      </div>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-date">Jan 2023 &ndash; Sep 2023</div>
+      <div class="exp-detail">
+        <b>Vaillant Group</b>, Germany &mdash; <i>Student, NLP Research</i>. Feature-extraction
+        strategies for a multilingual spare-part recommendation prototype.
+      </div>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-date">Nov 2021 &ndash; Dec 2022</div>
+      <div class="exp-detail">
+        <b>Fraunhofer IAIS</b>, Sankt Augustin &mdash; <i>Student Research Assistant</i>.
+        News-classification research with a focus on zero-shot transfer and representation analysis.
+      </div>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-date">Sep 2020 &ndash; Jan 2021</div>
+      <div class="exp-detail">
+        <b>Covalensedigital</b>, India &mdash; <i>Software Developer</i>. Subscription-monetisation
+        solutions for telecom clients across C, Java/J2EE and PL/SQL.
+      </div>
+    </div>
+
+    <div class="section-heading" style="margin-top: 20px;">Education</div>
+
+    <div class="exp-row">
+      <div class="exp-date">2021 &ndash; 2026</div>
+      <div class="exp-detail">
+        <b>M.Sc. Autonomous Systems</b><br/>
+        Hochschule Bonn-Rhein-Sieg, Germany
+      </div>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-date">2016 &ndash; 2020</div>
+      <div class="exp-detail">
+        <b>B.Tech. Computer Science &amp; Engineering</b><br/>
+        Presidency University, Bangalore, India
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
 
 
-<!-- ============== EDUCATION ============== -->
-<tr>
-<td>
-  <heading>Education</heading>
+</div><!-- /.main-content -->
 
-  <table width="100%" border="0" cellspacing="0" cellpadding="5">
-  <tr>
-    <td valign="top" width="150"><i>2021 &ndash; 2026</i></td>
-    <td valign="top">
-      <b>M.Sc. Autonomous Systems</b><br/>
-      Hochschule Bonn-Rhein-Sieg, Germany
-    </td>
-  </tr>
-  <tr>
-    <td valign="top"><i>2016 &ndash; 2020</i></td>
-    <td valign="top">
-      <b>B.Tech. Computer Science &amp; Engineering</b><br/>
-      Presidency University, Bangalore, India
-    </td>
-  </tr>
-  </table>
-</td>
-</tr>
+<!-- ── SIDEBAR (right) ── -->
+<aside class="sidebar" id="extras">
 
+  <!-- ── Weekend Builds ── -->
+  <div class="col-panel">
+    <div class="col-heading">Weekend Builds</div>
+    <a href="weekend/template-project.html" class="col-item">
+      <span class="col-date">May 2026</span>
+      <span class="col-label">Template project &mdash; placeholder for your first weekend build</span>
+    </a>
+    <!-- add more weekend builds here -->
+  </div>
 
-<!-- ============== BLOG ============== -->
-<tr>
-<td>
-  <a name="blog"></a>
-  <heading>Blog</heading>
+  <!-- ── News ── -->
+  <div class="col-panel">
+    <div class="col-heading">News</div>
+    <a href="news/joined-rpl.html" class="col-item">
+      <span class="col-date">Apr 2026</span>
+      <span class="col-label">Joined RPL @ University of Bonn as Research Assistant</span>
+    </a>
+    <a href="news/thesis-defended.html" class="col-item">
+      <span class="col-date">Mar 2026</span>
+      <span class="col-label">M.Sc. thesis defended &mdash; FunAkt3D</span>
+    </a>
+    <a href="news/guido-started.html" class="col-item">
+      <span class="col-date">Mar 2026</span>
+      <span class="col-label">Started building Guido &mdash; hospital assistance robot</span>
+    </a>
+    <!-- add more news items here -->
+  </div>
 
-  <table width="100%" border="0" cellspacing="0" cellpadding="5">
+</aside>
 
-  <!-- Each post is one row. Copy a row to add a new post. Newest at the top. -->
-  <tr>
-    <td valign="top" width="150"><i>April 2026</i></td>
-    <td valign="top">
-      <a href="assets/blogs/building-guido.html"><b>template heading</b></a><br/>
-      short description.
-    </td>
-  </tr>
-
-  <!-- Example of how to add more:
-  <tr>
-    <td valign="top"><i>May 2026</i></td>
-    <td valign="top">
-      <a href="blog/your-post-slug.html"><b>Your post title</b></a><br/>
-      A one-line summary of the post.
-    </td>
-  </tr>
-  -->
-
-  </table>
-</td>
-</tr>
-
+</div><!-- /.page-layout -->
 
 <!-- ============== FOOTER ============== -->
-<tr>
-<td>
-  <br/>
-  <p style="text-align: right; font-size: 11px; color: #999;">
-    <i>Template stolen with love from <a href="https://jonbarron.info/">Jon Barron</a>.</i>
-  </p>
-</td>
-</tr>
+<footer class="footer">
+  <p>Template stolen with love from <a href="https://jonbarron.info/">Jon Barron</a>, then rebuilt as a terminal.</p>
+</footer>
 
-</table>
+</div><!-- /.container -->
 
 </body>
 </html>
