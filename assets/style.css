@@ -555,8 +555,9 @@ a:hover { color: var(--green); }
 /* ── MOBILE ── */
 @media (max-width: 700px) {
   .navbar-prompt { display: none; }
-  .navbar-inner { justify-content: center; }
-  .navbar-links { justify-content: center; }
+  .navbar-inner { justify-content: center; height: auto; padding: 8px 12px; }
+  .navbar-links { justify-content: center; gap: 4px; }
+  .navbar-links a { font-size: 13px; padding: 4px 8px; }
 
   .container { padding: 64px 12px 24px; }
 
@@ -600,6 +601,11 @@ a:hover { color: var(--green); }
   .sidebar-right {
     width: 100%;
     position: static;
+    order: 2;
+  }
+
+  .main-content {
+    order: 1;
   }
 
   .sidebar {
