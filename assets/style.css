@@ -31,7 +31,7 @@ html {
 
 body {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);
@@ -91,17 +91,17 @@ body {
 
 .navbar-links {
   display: flex;
-  gap: 6px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
 .navbar-links a {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 16px;
   color: var(--text-dim);
   text-decoration: none;
-  padding: 4px 10px;
+  padding: 6px 14px;
   border-radius: 4px;
   transition: all 0.2s;
   border: 1px solid transparent;
@@ -115,7 +115,7 @@ body {
 
 /* ── LAYOUT ── */
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 72px 24px 40px;
 }
@@ -126,9 +126,27 @@ body {
   align-items: flex-start;
 }
 
+.page-layout.three-col {
+  justify-content: center;
+}
+
 .main-content {
   flex: 1;
   min-width: 0;
+}
+
+.sidebar-left {
+  width: 250px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 68px;
+}
+
+.sidebar-right {
+  width: 350px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 68px;
 }
 
 .sidebar {
@@ -274,18 +292,22 @@ body {
   border-radius: 8px;
   border: 2px solid var(--border);
   filter: grayscale(20%) contrast(1.05);
-  transition: filter 0.3s, border-color 0.3s;
+  transition: filter 0.3s, border-color 0.3s, transform 0.3s;
+  cursor: pointer;
 }
 
 .hero-portrait img:hover {
   filter: grayscale(0%) contrast(1.1);
   border-color: var(--green-muted);
+  transform: scale(1.8);
+  z-index: 100;
+  position: relative;
 }
 
 /* ── SECTION HEADINGS ── */
 .section-heading {
   font-family: var(--font-mono);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--green);
   margin-bottom: 20px;
@@ -364,14 +386,14 @@ body {
 
 .item-title {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--green);
   margin-bottom: 4px;
 }
 
 .item-meta {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-dim);
   margin-bottom: 8px;
 }
@@ -381,7 +403,7 @@ body {
 }
 
 .item-content p {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text);
   margin-top: 6px;
 }
@@ -391,7 +413,7 @@ body {
 }
 
 .item-links a {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--blue);
   text-decoration: none;
   margin-right: 12px;
@@ -408,7 +430,7 @@ body {
   gap: 16px;
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .exp-row:last-child { border-bottom: none; }
@@ -417,7 +439,7 @@ body {
   color: var(--text-dim);
   flex-shrink: 0;
   width: 160px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .exp-detail {
@@ -574,6 +596,12 @@ a:hover { color: var(--green); }
     flex-direction: column;
   }
 
+  .sidebar-left,
+  .sidebar-right {
+    width: 100%;
+    position: static;
+  }
+
   .sidebar {
     width: 100%;
     position: static;
@@ -644,9 +672,44 @@ a:hover { color: var(--green); }
 }
 
 .col-label {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text);
   transition: color 0.2s;
+  line-height: 1.5;
+}
+
+/* ── WEEKEND BUILD SIDEBAR THUMBNAIL ── */
+.col-item-weekend {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  margin-bottom: 8px;
+  transition: border-color 0.3s;
+}
+
+.col-item-weekend:hover .col-thumb {
+  border-color: var(--green-muted);
+}
+
+/* ── DETAIL PAGE HERO IMAGE / VIDEO ── */
+.detail-hero-img {
+  margin-bottom: 24px;
+}
+
+.detail-hero-img img,
+.detail-hero-img video {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
 }
 
 /* ── DETAIL PAGE (news / weekend builds) ── */
